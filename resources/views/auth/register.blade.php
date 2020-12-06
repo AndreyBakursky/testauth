@@ -10,8 +10,28 @@
             @csrf
 
             <div>
-                <x-jet-label for="name" value="{{ __('Name') }}" />
-                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                <x-jet-label for="firstname" value="{{ __('Имя') }}" />
+                <x-jet-input id="firstname" class="block mt-1 w-full" type="text" name="firstname" :value="old('firstname')" required autofocus autocomplete="firstname" />
+            </div>
+
+            <div>
+                <x-jet-label for="lastname" value="{{ __('Фамилия') }}" />
+                <x-jet-input id="lastname" class="block mt-1 w-full" type="text" name="lastname" :value="old('lastname')" required autofocus autocomplete="lastname" />
+            </div>
+
+            <div>
+                <x-jet-label for="phone" value="{{ __('Телефон') }}" />
+                <x-jet-input id="phone" class="block mt-1 w-full" type="tel" name="phone" :value="old('phone')" required autofocus autocomplete="phone" />
+            </div>
+
+            <div>
+                <x-jet-label for="invitename" value="{{ __('Кто пригласил') }}" />
+                <x-jet-input id="invitename" class="block mt-1 w-full" type="text" name="invitename" :value="old('invitename')" required autofocus autocomplete="invitename" />
+            </div>
+
+            <div>
+                <x-jet-label for="organization" value="{{ __('Организация') }}" />
+                <x-jet-input id="organization" class="block mt-1 w-full" type="text" name="organization" :value="old('organization')" required autofocus autocomplete="organization" />
             </div>
 
             <div class="mt-4">
