@@ -1,15 +1,15 @@
 <x-jet-action-section>
     <x-slot name="title">
-        {{ __('Browser Sessions') }}
+        {{ __('Сессансы браузера') }}
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Manage and logout your active sessions on other browsers and devices.') }}
+        {{ __('Управляйте активными сеансами и выходите из них в других браузерах и устройствах.') }}
     </x-slot>
 
     <x-slot name="content">
         <div class="max-w-xl text-sm text-gray-600">
-            {{ __('If necessary, you may logout of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.') }}
+            {{ __('При необходимости вы можете выйти из всех других сеансов браузера на всех ваших устройствах. Некоторые из ваших последних сеансов перечислены ниже; однако этот список может быть не исчерпывающим. Если вы чувствуете, что ваша учетная запись была скомпрометирована, вам также следует обновить свой пароль..') }}
         </div>
 
         @if (count($this->sessions) > 0)
@@ -53,11 +53,11 @@
 
         <div class="flex items-center mt-5">
             <x-jet-button wire:click="confirmLogout" wire:loading.attr="disabled">
-                {{ __('Logout Other Browser Sessions') }}
+                {{ __('Отключить все активные сеансы') }}
             </x-jet-button>
 
             <x-jet-action-message class="ml-3" on="loggedOut">
-                {{ __('Done.') }}
+                {{ __('Готово.') }}
             </x-jet-action-message>
         </div>
 
