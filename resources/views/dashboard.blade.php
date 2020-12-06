@@ -1,4 +1,5 @@
 <x-app-layout>
+    @section('title-block')Домашняя@endsection
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Домашняя страница') }}
