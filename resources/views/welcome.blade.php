@@ -16,12 +16,12 @@
             }
         </style>
     </head>
-    <body class="antialiased">
+    <body>
     @include('header')
     <div class="container">
         <div class="row">
             <div class="col-8">
-                @yield('content')
+                <h3>Привет!</h3>
             </div>
         </div>
     </div>
